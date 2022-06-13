@@ -22,8 +22,8 @@ jobs:
       - name: Download container-structure-test
         run: |
           set -e
-          curl --retry 5 -fSLo container-structure-test https://storage.googleapis.com/container-structure-test/v1.10.0/container-structure-test-linux-amd64
-          echo '72deeea26c990274725a325cf14acd20b8404251c4fcfc4d34b7527aac6c28bc container-structure-test' | sha256sum -c -
+          curl --retry 5 -fSLo container-structure-test https://storage.googleapis.com/container-structure-test/v1.11.0/container-structure-test-linux-amd64
+          echo '1524da5fd5a0fc88c4c9257a3de05a45f135df07e6a684380dd5f659b9ce189b *container-structure-test' | sha256sum -c -
           chmod +x ./container-structure-test
 
       - name: Test image
