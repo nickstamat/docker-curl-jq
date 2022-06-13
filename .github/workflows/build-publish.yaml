@@ -14,7 +14,7 @@ jobs:
       DOCKER_BUILDKIT: "1"
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.0.2
 
       - name: Build image
         run: docker build --pull -t nickstamat/curl-jq:7.81.0-1.6 -t nickstamat/curl-jq:latest .
