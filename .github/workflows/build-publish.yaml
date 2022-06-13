@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build image
-        run: docker build -t nickstamat/curl-jq:7.68.0-1.6 -t nickstamat/curl-jq:latest .
+        run: docker build --pull -t nickstamat/curl-jq:7.81.0-1.6 -t nickstamat/curl-jq:latest .
 
       - name: Download container-structure-test
         run: |
